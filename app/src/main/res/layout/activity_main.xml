@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/valOne"
+        android:hint="@string/enter_value_one"
+        android:inputType="numberDecimal"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/valTwo"
+        android:hint="@string/enter_value_two"
+        android:inputType="numberDecimal"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:layout_marginBottom="5dp"
+            android:background="@color/colorAccent"
+            android:textColor="@android:color/white"
+            android:layout_marginRight="5dp"
+            android:id="@+id/addBtn"
+            android:onClick="addFun"
+            android:text="@string/add"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:layout_marginBottom="5dp"
+            android:background="@color/colorAccent"
+            android:textColor="@android:color/white"
+            android:layout_marginRight="5dp"
+            android:id="@+id/subBtn"
+            android:onClick="subFun"
+            android:text="@string/subtract"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:id="@+id/multBtn"
+            android:layout_marginBottom="5dp"
+            android:background="@color/colorAccent"
+            android:textColor="@android:color/white"
+            android:layout_weight="1"
+            android:text="@string/product"
+            android:onClick="producFun"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:layout_marginBottom="5dp"
+            android:background="@color/colorAccent"
+            android:textColor="@android:color/white"
+            android:layout_marginRight="5dp"
+            android:id="@+id/divBtn"
+            android:text="@string/division"
+            android:onClick="divFun"
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/answer"
+        android:id="@+id/answerView"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textStyle="bold"
+        />
+
+</LinearLayout>
